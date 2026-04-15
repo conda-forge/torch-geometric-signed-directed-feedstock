@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: torch-geometric-signed-directed
-  version: 1.0.1
+  version: "1.1.1"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/torch_geometric_signed_directed-${{ version }}.tar.gz
-  sha256: 6c071008f292522b2d29f1a6663d1de5b26403e3ebc0ae58fa92319c62e2f1d3
+  sha256: add7ba691ff84c9b7788ee3932765af8fd2df09ae8c5e572b1cc6a39364f03e7
 
 build:
   number: 0
@@ -28,7 +28,7 @@ requirements:
     - scikit-learn
     - pytorch_geometric
     - numpy
-    - networkx <2.7
+    - networkx >=2.7
     - scipy
 
 tests:
