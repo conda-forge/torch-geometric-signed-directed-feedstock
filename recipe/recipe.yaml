@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: torch-geometric-signed-directed
-  version: "1.1.1"
+  version: "1.2.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/torch_geometric_signed_directed-${{ version }}.tar.gz
-  sha256: add7ba691ff84c9b7788ee3932765af8fd2df09ae8c5e572b1cc6a39364f03e7
+  sha256: ce7d2b8f478adf691c8647eb8b89f605867a05d2ce7a9108ab7d86895fc4b872
 
 build:
   number: 0
