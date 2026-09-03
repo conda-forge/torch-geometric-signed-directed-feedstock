@@ -8,7 +8,7 @@ package:
   version: ${{ version }}
 
 source:
-  url: https://pypi.org/packages/source/t/ torch-geometric-signed-directed/torch_geometric_signed_directed-${{ version }}.tar.gz
+  url: https://pypi.org/packages/source/t/torch-geometric-signed-directed/torch_geometric_signed_directed-${{ version }}.tar.gz
   sha256: ce7d2b8f478adf691c8647eb8b89f605867a05d2ce7a9108ab7d86895fc4b872
 
 build:
