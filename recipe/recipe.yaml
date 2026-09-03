@@ -1,15 +1,14 @@
 schema_version: 1
 
 context:
-  name: torch-geometric-signed-directed
   version: "1.2.0"
 
 package:
-  name: ${{ name|lower }}
+  name: torch-geometric-signed-directed
   version: ${{ version }}
 
 source:
-  url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/torch_geometric_signed_directed-${{ version }}.tar.gz
+  url: https://pypi.org/packages/source/t/ torch-geometric-signed-directed/torch_geometric_signed_directed-${{ version }}.tar.gz
   sha256: ce7d2b8f478adf691c8647eb8b89f605867a05d2ce7a9108ab7d86895fc4b872
 
 build:
@@ -24,9 +23,9 @@ requirements:
     - pip
   run:
     - python >=${{ python_min }}
-    - pytorch
+    - pytorch >=2.4.0
     - scikit-learn
-    - pytorch_geometric
+    - pytorch_geometric >=2.6.0
     - numpy
     - networkx >=2.7
     - scipy
@@ -36,7 +35,9 @@ tests:
       imports:
         - torch_geometric_signed_directed
       pip_check: true
-      python_version: ${{ python_min }}.*
+      python_version: 
+        - ${{ python_min }}.*
+        - "*"
 
 about:
   summary: An Extension Library for PyTorch Geometric on signed and directed networks.
